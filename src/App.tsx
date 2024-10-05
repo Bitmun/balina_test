@@ -8,7 +8,7 @@ import './styles.css';
 import axios from 'axios';
 
 export const App = () => {
-  const [users, setUsers] = useState<User[]>([]);
+  const [users, setUsers] = useState<User[] | null>(null);
 
   const [isLoading, setIsLoading] = useState(false);
 
@@ -32,7 +32,8 @@ export const App = () => {
     <main className="main">
       <h1 className="orangeGradient">Find your user</h1>
       <UserSearch handleSearch={handleSearch} />
-      {isLoading ? <h2 className="loader">Loading...</h2> : <UserList users={users} />}
+      {isLoading && <h2 className="loader">Loading...</h2>}
+      {!isLoading && users != null && <UserList users={users} />}
     </main>
   );
 };

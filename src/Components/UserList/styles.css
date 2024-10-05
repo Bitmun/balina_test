@@ -20,12 +20,12 @@
   margin: 25px 0;
   font-size: 0.9em;
   font-family: sans-serif;
-  min-width: 400px;
+  min-width: 360px;
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
   background: white;
 }
 
-.usersTable thead th {
+.usersTable tr th {
   background-color: #009879;
   color: #ffffff;
   text-align: left;
