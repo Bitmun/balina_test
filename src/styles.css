@@ -1,0 +1,21 @@
+body {
+  background: linear-gradient(90deg, #00C0FF, #4218B8);
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 5px;
+}
+
+.loader {
+  color: white;
+}
+
+.orangeGradient {
+  background-image: linear-gradient(to bottom right, #FD8451, #FFBD6F);
+  background-clip: text;
+  color: transparent;
+}

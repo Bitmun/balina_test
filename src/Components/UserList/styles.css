@@ -1,0 +1,49 @@
+.notFound {
+  color: white;
+}
+
+/* .usersTable {
+  border: 2px solid white;
+  border-collapse: collapse;
+  margin: 25px 0;
+  min-width: 400px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+}
+
+.usersTable thead td {
+  color: white;
+  font-weight: 800;
+} */
+
+.usersTable {
+  border-collapse: collapse;
+  margin: 25px 0;
+  font-size: 0.9em;
+  font-family: sans-serif;
+  min-width: 400px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+  background: white;
+}
+
+.usersTable thead th {
+  background-color: #009879;
+  color: #ffffff;
+  text-align: left;
+}
+
+.usersTable th,
+.usersTable td {
+    padding: 12px 15px;
+}
+
+.usersTable tbody tr {
+  border-bottom: 1px solid #dddddd;
+}
+
+.usersTable tbody tr:nth-of-type(even) {
+  background-color: #f3f3f3;
+}
+
+.usersTable tbody tr:last-of-type {
+  border-bottom: 2px solid #009879;
+}

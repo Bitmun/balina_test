@@ -1,0 +1,23 @@
+.searchWrapper {
+  display: flex;
+  padding-bottom: 5px;
+  gap: 2px;
+}
+
+.searchInput {
+  padding: 5px;
+  border: 1px solid black;
+  border-radius: 3px;
+}
+
+.searchButton {
+  background: rgba(255, 255, 255, 0.705);
+  border: 1px solid;
+  border-radius: 3px;
+}
+
+.searchButton:not(:disabled):hover {
+  background: white;
+  cursor: pointer;
+  box-shadow: 0px 0px 1px 1px #0000003b;
+}
