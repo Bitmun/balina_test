@@ -12,16 +12,19 @@ export const App = () => {
 
   const [isLoading, setIsLoading] = useState(false);
 
+  const [error, setError] = useState(false);
+
   const handleSearch = async (name: string) => {
+    setError(false);
     setIsLoading(true);
     try {
       await axios
         .get(`https://jsonplaceholder.typicode.com/users?name=${name}`)
         .then((res) => {
-          console.log(res.data);
           setUsers(res.data);
         });
     } catch (error) {
+      setError(true);
       console.log(error);
     } finally {
       setIsLoading(false);
@@ -33,6 +36,7 @@ export const App = () => {
       <h1 className="orangeGradient">Find your user</h1>
       <UserSearch handleSearch={handleSearch} />
       {isLoading && <h2 className="loader">Loading...</h2>}
+      {error && <h2 className="loader">Some error occured.</h2>}
       {!isLoading && users != null && <UserList users={users} />}
     </main>
   );

@@ -1,6 +1,8 @@
 import { render } from '@testing-library/react';
+
 import { UserList } from './UserList';
-import { describe, test, expect } from 'vitest';
+
+import { describe, expect, test } from 'vitest';
 
 const users = [
   {
