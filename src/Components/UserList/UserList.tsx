@@ -10,19 +10,17 @@ export const UserList = ({ users }: UserListProps) => {
   }
 
   return (
-    <div>
-      <table className="usersTable">
-        <tbody>
-          <tr>
-            <th>Username</th>
-            <th>Email</th>
-            <th>Phone</th>
-          </tr>
-          {users.map((user) => (
-            <User user={user} key={user.id} />
-          ))}
-        </tbody>
-      </table>
-    </div>
+    <table className="usersTable">
+      <tbody>
+        <tr>
+          <th>Username</th>
+          <th>Email</th>
+          <th>Phone</th>
+        </tr>
+        {users.map((user) => (
+          <User user={user} key={user.id} />
+        ))}
+      </tbody>
+    </table>
   );
 };
